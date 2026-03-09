@@ -1,1 +1,14 @@
-JMeter API test plan
+Test Plan: Search API Load Test
+
+Thread Group Configuration
+Users: 10
+Ramp Up: 10 seconds
+Duration: 60 seconds
+
+API Endpoint
+GET /api/search?q=testing
+
+Assertions
+1. Response status code = 200
+2. Response time less than 2000 ms
+3. Response body contains keyword "testing"
